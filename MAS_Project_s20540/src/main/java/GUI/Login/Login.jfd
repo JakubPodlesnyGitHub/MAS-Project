@@ -1,0 +1,77 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets dialog,hidemode 3"
+					"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+					"$rowConstraints": "[][][][]"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelLogin"
+						"text": "Login"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textFieldLogin"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 1 8 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPassword"
+						"text": "Password"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2"
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "passwordField"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 2 8 1"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "buttonForgetPassword"
+						"text": "Forget Password"
+						"preferredSize": new java.awt.Dimension( 100, 15 )
+						"maximumSize": new java.awt.Dimension( 152, 20 )
+						"margin": new java.awt.Insets( 5, 0, 0, 0 )
+						"minimumSize": new java.awt.Dimension( 120, 20 )
+						"actionCommand": "Forget Password"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "forgetPassword", true ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3 4 1"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets dialog,alignx right"
+					"$columnConstraints": "[button,fill]"
+					"$rowSpecs": "[fill]"
+				} ) {
+					name: "buttonBar"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "buttonSingIN"
+						"text": "SING IN"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "singIN", true ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 345, 260 )
+		} )
+	}
+}

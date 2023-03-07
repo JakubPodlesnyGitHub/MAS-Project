@@ -1,0 +1,149 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets dialog,hidemode 3"
+					"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+					"$rowConstraints": "[][][][][][][][][][]"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelTitleConfirmation"
+						"text": "Purchase Confirmation"
+						"font": new java.awt.Font( "Segoe UI", 0, 14 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelFirstName"
+						"text": "First Name"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelFirstNameInput"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 1 9 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelLastName"
+						"text": "Last Name"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelLastNameInput"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 2 9 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPhoneNumber"
+						"text": "Phone Number"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPhoneNumberInput"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 3 9 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelEmail"
+						"text": "Email"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 4 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelEmailInput"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 4 9 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelMovieTitle"
+						"text": "Movie Title"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 5 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelMovieTitleInput"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 5 9 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelMovieDate"
+						"text": "MovieDate"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 6 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelMovieDateInput"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 6 9 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelMovieHour"
+						"text": "Movie Hour"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 7 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelMovieHourInput"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 7 9 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPurchaseCost"
+						"text": "Cost"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 8 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPurchaseCostInput"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 8 9 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPaymentStatus"
+						"text": "Payment Status"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 9 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPaymentStatusInput"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 9 9 1"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets dialog,alignx right"
+					"$columnConstraints": "[button,fill]"
+					"$rowSpecs": "[fill]"
+				} ) {
+					name: "buttonBar"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "buttonDisplayTickets"
+						"text": "Display Tickets"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttondisplayTicketsHandler", true ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 380, 350 )
+		} )
+	}
+}
